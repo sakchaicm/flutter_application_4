@@ -37,6 +37,11 @@ class _HomeScreenState extends State<HomeScreen> {
                         children: [Icon(Icons.star), Text("41")]),
                   ]),
             ),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamed('/login');
+                },
+                child: const Text("ไป login")),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
